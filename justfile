@@ -11,4 +11,4 @@ tag:
 
 release:
   just tag
-  version=$(cat VERSION) && gh release create v$version --generate-notes
+  gh release create v{{version}} --generate-notes
