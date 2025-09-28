@@ -1,6 +1,5 @@
 packages:
-  - name: curse
-    type: github_release
+  - type: github_release
     repo_owner: wu-json
     repo_name: curse
     asset: curse_{{trimV .Version}}_{{.OS}}_{{.Arch}}.tar.gz
