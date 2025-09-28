@@ -9,6 +9,5 @@ tag:
     echo "Tag v{{version}} already exists, skipping..."
   fi
 
-release:
-  just tag
+release: tag
   gh release create v{{version}} --generate-notes
