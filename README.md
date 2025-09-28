@@ -7,6 +7,10 @@ Cursed Tools contains registry configurations for tools I've built. If you love 
 
 <img width="716" height="359" alt="Cursed_Tools" src="https://github.com/user-attachments/assets/8e4655d4-c084-49aa-b947-6630d04f6b1d" />
 
+## Current Inventory
+
+- **[curse](https://github.com/wu-json/curse)**: Manage processes in your terminal.
+
 ## Aqua Registry
 
 To install the `cursed-tools` aqua registry, you will need to add the following to your `aqua.yaml`.
