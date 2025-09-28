@@ -1,13 +1,13 @@
 version := `cat VERSION`
 
-tag:
+bump-and-commit-version bump_type:
   #!/usr/bin/env bash
-  if ! git rev-parse "v{{version}}" >/dev/null 2>&1; then
-    git tag v$version
-    git push origin v{{version}}
-  else
-    echo "Tag v{{version}} already exists, skipping..."
-  fi
+  new_version=$(svu {{bump_type}})
+  echo $new_version > VERSION
+  git add -A
+  git commit -m "chore(release): v$new_version"
+  git tag v$new_version
+  git push --follow-tags
 
-release: tag
+release: bump-and-commit-version
   gh release create v{{version}} --generate-notes

@@ -10,3 +10,4 @@ registries:
     ref: v4.418.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: casey/just@1.43.0
+  - name: caarlos0/svu@v3.2.4
