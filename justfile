@@ -9,5 +9,5 @@ bump-and-commit-version bump_type:
   git tag v$new_version
   git push --follow-tags
 
-release: bump-and-commit-version
+release:
   gh release create v{{version}} --generate-notes
